@@ -30,7 +30,7 @@
 
 ## Práctico 3
 
-#### [Creación de Datasets de Historias de Usuario](https://github.com/Leonardo-de-los-rios/inteligencia-artificial/blob/main/Unidad%201/Pr%C3%A1ctico%201/ejercicio1.py)
+#### [Creación de Datasets de Historias de Usuario](https://github.com/Leonardo-de-los-rios/ingenieria-de-software-III/blob/main/Pr%C3%A1ctico%203/dataset.py)
 
 #### Link del pdf resuelto:
 
