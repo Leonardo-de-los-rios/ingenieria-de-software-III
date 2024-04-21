@@ -1,0 +1,63 @@
+1,"Como usuario administrador, quiero un registro de auditoria, para lograr realizar seguimiento de la actividad de los demas usuarios",Si
+2,"Como usuario cualquiera, quiero una barra de busqueda, para lograr ubicar cajas NAP en el mapa o consultar cobertura en una coordenada especifica",Si
+3,"Como usuario administrador, quiero botones para agregar caja NAP, clientes y servicios, para lograr un ABM de clientes, cajas nap y servicios de manera embebida",No
+4,"Quiero un boton ""ver señal"" por cada cliente en una caja, para lograr ver la señal de cada cliente",No
+5,"Como usuario soporte tecnico, quiero un slide que me permita cambiar la vista de colores de las cajas entre factor de ocupacion (cantidad de clientes por caja) y estado (una puntuacion calculada por las señales de los clientes), para lograr hacer monitoreo bajo 2 enfoques diferentes",Si
+6,"Como usuario cualquiera, quiero que la interfaz sea responsiva e intuitiva, para lograr hacer uso de esta de forma comoda tanto en pc como en celular",No
+7,"como usuario tecnico, quiero que se mantenga fija la posicion del mapa en la ubicacion actual, para lograr que el tecnico vea solo las cajas que tiene cerca",No
+8,"Como usuario cualquiera, quiero poder ejecutar el producto en todas las versiones de Windows",No
+9,"Como Analista de logística, quiero que el sistema me sugiera la ruta más corta en base a una serie de despachos de mercancía y un transporte.",Si
+10,"Como Vendedor, quiero registrar los productos y cantidades que me solicita un cliente para crear un pedido de venta.",Si
+11,"Como Cliente, quiero pagar mi suscripción mensual vía sitio web ",No
+12,"Como un operador hotelero, quiero establecer las tarifas óptimas para las habitaciones de mi hotel.",No
+13,"Como Supervisor de ventas, quiero consultar un listado de los pedidos de venta que han sido registrados y aún no han sido procesados.",Si
+14,"Como cliente recurrente, espero que mi información quede guardada para crear una experiencia de pago más fluida.",No
+15,"Como gerente de proyecto, necesito un tablero de control personalizable para visualizar el progreso y el rendimiento de mi equipo en diferentes proyectos.",No
+16,"Como usuario premium, quiero acceder a contenido exclusivo para sentir que mi membresía tiene un valor adicional.",No
+17,"Como usuario nuevo, deseo recibir un tutorial interactivo al iniciar sesión por primera vez para entender mejor cómo utilizar todas las funciones de la plataforma.",Si
+18,"Como gerente de ventas, necesito un informe de análisis de ventas mensuales para identificar tendencias, oportunidades de mejora y establecer metas realistas para el equipo.",Si
+19,"Como usuario, quiero poder cambiar mi contraseña y gestionar la seguridad de mi cuenta fácilmente para proteger mis datos personales y financieros.",No
+20,Como usuario administrador quiero crear un nuevo rol a una persona para que pueda acceder a ciertos permisos que no forman parte de los roles ya definidos.,No
+21,Como usuario administrador quiero ver el listado de los productos que han sido creados para tener un mejor orden y control de los mismos.,Si
+22,Como usuario administrador quiero eliminar una categoría para que deje de estar disponible entre las opciones a seleccionar. ,Si
+23,Como usuario turista quiero visualizar todos los detalles de una actividad/evento para conocer toda su información y de esa manera poder decidir si me gustaría realizarla o no.,Si
+24,Como usuario administrador quiero aprobar la solicitud de alta de un emprendimiento para notificar al prestador de la misma y de esa forma pueda publicar su emprendimiento.,Si
+25,Como usuario prestador quiero modificar mi emprendimiento para mantener actualizado sus datos dentro de la plataforma.,Si
+26,Como usuario administrador quiero acceder a las estadísticas de la plataforma para llevar un control de la cantidad de emprendedores/actividades existentes y visualizar su estado.,Si
+27,Como usuario quiero buscar un producto con un “nombre” para verificar disponibilidad y precio en distintos supermercados.,Si
+28,Como usuario quiero agregar un producto utilizando un lector de código barra para actualizar la base de datos en caso que no exista el producto.,No
+29,Como usuario quiero hacer una búsqueda del producto filtrada por cercanía a mi ubicación actual para ahorrar en tiempo de viaje y combustible.,No
+30,Como usuario quiero hacer una búsqueda del producto filtrada por nombre y  precio para verificar si existe un producto con ese nombre y a ese precio.,Si
+31,Como usuario quiero hacer una búsqueda del producto filtrada por el fabricante.,Si
+32,Como usuario quiero hacer una búsqueda del producto filtrada por nombre y disponibilidad para que me muestre los productos disponibles.,Si
+33,"Como usuario, quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta de forma segura.",Si
+34,"Como usuario, deseo poder buscar productos por nombre o categoría en la plataforma de comercio electrónico para encontrar rápidamente lo que estoy buscando.",No
+35,"El usuario debería poder iniciar sesión utilizando su dirección de correo electrónico o número de teléfono, así como también a través de cuentas de redes sociales como Facebook y Twitter para acceder a la plataforma.",No
+36,"El sistema debería ser capaz de generar informes detallados sobre las ventas, incluyendo información sobre productos vendidos, clientes registrados, comentarios de clientes y datos de envío para facilitar el análisis exhaustivo de la actividad comercial",No
+37,"Como administrador del sistema, necesito poder generar informes mensuales de ventas que incluyan datos como ingresos totales, productos más vendidos y clientes más activos para tener una visión clara del desempeño del negocio.",Si
+38,"Como Cliente, quiero pagar mi suscripción mensual vía sitio web por medio de transferencia bancaria o tarjeta de crédito.",Si
+39,"Como Usuario Administrador, Cuando accedo a la aplicación con “usuario” y “contraseña”, Quiero ver el listados de usuarios registrados.",Si
+40,"Como Usuario de la Plataforma, Cuando accedo a la aplicación con “usuario” y “contraseña”, Quiero ver un listado de peliculas basado en mis gustos personales",Si
+41,"Como Usuario, quiero pagar mi suscripción mensual vía sitio web por medio de transferencia bancaria o tarjeta de crédito.",Si
+42,"Como Usuario, quiero que el sitio web responda a toda transacción o funcionalidad de negocio en menos de 5 segundos.",No
+43,"Como Cliente, quiero poder ejecutar tu producto en todas las versiones de Windows, desde Windows 7 en adelante.",No
+44,"Como Vendedor, quiero registrar los productos y cantidades que me solicita un cliente para crear un pedido de venta.",Si
+45,"Como Gerente de ventas, quiero consultar los pedidos de venta procesados clasificándolos por vendedor, región y líneas de producto.",Si
+46,"Como Analista de logística, quiero seleccionar un pedido de venta y enviarlo al almacén para que procedan con su preparación.",Si
+47,"Como Analista de logística, quiero que el sistema me sugiera la ruta más corta en base a una serie de despachos de mercancía y un transporte.",Si
+48,"Como cliente recurrente, quiero que mi información quede guardada para crear una experiencia de pago más fluida.",No
+49,"Como usuario frecuente de la aplicación, quiero una forma de simplificar la información relevante de la manera más rápida posible.",No
+50,"Como gerente de producto, quiero una manera en que los miembros del equipo puedan entender cómo las tareas individuales contribuyen a los objetivos comerciales más amplios para aumentar la eficiencia.",No
+51,"Como Product Owner, quiero que el sistema tenga la posibilidad de eliminar cuentas del cliente, con la finalidad que los usuarios puedan eliminar las cuentas de cliente",No
+52,Como usuario quiero acceder a la agenda de enfermería de forma segura para usar sus funcionalidades,No
+53,Como usuario quiero ser capaz de mostrar la lista de visitas para poder gestionar la llegada de pacientes y de salas de espera,Si
+54,Como usuario quiero poder acceder a la agenda de enfermería para utilizar sus funcionalidades,No
+55,Como usuario quiero poder buscar transacciones para poder detectar gastos innecesarios en mi cuenta durante cierto periodo de tiempo,Si
+56,"Como desarrollador, yo quiero reemplazar el Widget de Barra para seleccionar productos, con la finalidad de dar mantenimieno al widget de barra para seleccionar productos",No
+57,"Como Usuario, quiero agregar la posibilidad de ordenar las OT (órdenes de trabajo) abiertas de la misma forma que se ordenan las OT pendientes.",Si
+58,"Como Usuario Administrador, quiero modificar la carga de combustible que figura en semi-camion. Dejar el valor del campo seteado en 000 y lo mismo del aereo.",No
+59,"Como Usuario Administrador, quiero descargar un informe general que tenga en cuenta todos los trabajaos que se hicieron en unidad (neumáticos, mantenimiento, combustible, etc).",Si
+60,"Como usuario administrador, quiero poder mantener los informes de mantenimiento durante 6 meses.",Si
+61,"Como usuario, quiero modificar los mensajes de aviso cuando creamos el check list llamado ""control mensual de documentación de unidades """,No
+62,"Como usuario administrador, quiero filtrar la información que se va a cargar en el informe de mantenimiento con los siguientes campos: Tipo de proyección, Valor, Internos, planes, personal acivo, internos seleccionados.",Si
+63,"Como usuario administrador, quiero poder eliminar las ordenes de trabajo",Si

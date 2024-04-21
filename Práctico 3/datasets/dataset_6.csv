@@ -1,0 +1,20 @@
+3,"Como usuario administrador, quiero botones para agregar caja NAP, clientes y servicios, para lograr un ABM de clientes, cajas nap y servicios de manera embebida",No
+4,"Quiero un boton ""ver señal"" por cada cliente en una caja, para lograr ver la señal de cada cliente",No
+6,"Como usuario cualquiera, quiero que la interfaz sea responsiva e intuitiva, para lograr hacer uso de esta de forma comoda tanto en pc como en celular",No
+7,"como usuario tecnico, quiero que se mantenga fija la posicion del mapa en la ubicacion actual, para lograr que el tecnico vea solo las cajas que tiene cerca",No
+11,"Como Cliente, quiero pagar mi suscripción mensual vía sitio web ",No
+15,"Como gerente de proyecto, necesito un tablero de control personalizable para visualizar el progreso y el rendimiento de mi equipo en diferentes proyectos.",No
+16,"Como usuario premium, quiero acceder a contenido exclusivo para sentir que mi membresía tiene un valor adicional.",No
+19,"Como usuario, quiero poder cambiar mi contraseña y gestionar la seguridad de mi cuenta fácilmente para proteger mis datos personales y financieros.",No
+20,Como usuario administrador quiero crear un nuevo rol a una persona para que pueda acceder a ciertos permisos que no forman parte de los roles ya definidos.,No
+29,Como usuario quiero hacer una búsqueda del producto filtrada por cercanía a mi ubicación actual para ahorrar en tiempo de viaje y combustible.,No
+35,"El usuario debería poder iniciar sesión utilizando su dirección de correo electrónico o número de teléfono, así como también a través de cuentas de redes sociales como Facebook y Twitter para acceder a la plataforma.",No
+36,"El sistema debería ser capaz de generar informes detallados sobre las ventas, incluyendo información sobre productos vendidos, clientes registrados, comentarios de clientes y datos de envío para facilitar el análisis exhaustivo de la actividad comercial",No
+42,"Como Usuario, quiero que el sitio web responda a toda transacción o funcionalidad de negocio en menos de 5 segundos.",No
+48,"Como cliente recurrente, quiero que mi información quede guardada para crear una experiencia de pago más fluida.",No
+49,"Como usuario frecuente de la aplicación, quiero una forma de simplificar la información relevante de la manera más rápida posible.",No
+50,"Como gerente de producto, quiero una manera en que los miembros del equipo puedan entender cómo las tareas individuales contribuyen a los objetivos comerciales más amplios para aumentar la eficiencia.",No
+51,"Como Product Owner, quiero que el sistema tenga la posibilidad de eliminar cuentas del cliente, con la finalidad que los usuarios puedan eliminar las cuentas de cliente",No
+54,Como usuario quiero poder acceder a la agenda de enfermería para utilizar sus funcionalidades,No
+56,"Como desarrollador, yo quiero reemplazar el Widget de Barra para seleccionar productos, con la finalidad de dar mantenimieno al widget de barra para seleccionar productos",No
+58,"Como Usuario Administrador, quiero modificar la carga de combustible que figura en semi-camion. Dejar el valor del campo seteado en 000 y lo mismo del aereo.",No

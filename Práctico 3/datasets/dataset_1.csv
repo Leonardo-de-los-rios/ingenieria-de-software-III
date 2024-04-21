@@ -1,0 +1,20 @@
+3,"Como usuario administrador, quiero botones para agregar caja NAP, clientes y servicios, para lograr un ABM de clientes, cajas nap y servicios de manera embebida",No
+4,"Quiero un boton ""ver señal"" por cada cliente en una caja, para lograr ver la señal de cada cliente",No
+15,"Como gerente de proyecto, necesito un tablero de control personalizable para visualizar el progreso y el rendimiento de mi equipo en diferentes proyectos.",No
+16,"Como usuario premium, quiero acceder a contenido exclusivo para sentir que mi membresía tiene un valor adicional.",No
+27,Como usuario quiero buscar un producto con un “nombre” para verificar disponibilidad y precio en distintos supermercados.,Si
+29,Como usuario quiero hacer una búsqueda del producto filtrada por cercanía a mi ubicación actual para ahorrar en tiempo de viaje y combustible.,No
+32,Como usuario quiero hacer una búsqueda del producto filtrada por nombre y disponibilidad para que me muestre los productos disponibles.,Si
+33,"Como usuario, quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta de forma segura.",Si
+40,"Como Usuario de la Plataforma, Cuando accedo a la aplicación con “usuario” y “contraseña”, Quiero ver un listado de peliculas basado en mis gustos personales",Si
+42,"Como Usuario, quiero que el sitio web responda a toda transacción o funcionalidad de negocio en menos de 5 segundos.",No
+45,"Como Gerente de ventas, quiero consultar los pedidos de venta procesados clasificándolos por vendedor, región y líneas de producto.",Si
+48,"Como cliente recurrente, quiero que mi información quede guardada para crear una experiencia de pago más fluida.",No
+51,"Como Product Owner, quiero que el sistema tenga la posibilidad de eliminar cuentas del cliente, con la finalidad que los usuarios puedan eliminar las cuentas de cliente",No
+53,Como usuario quiero ser capaz de mostrar la lista de visitas para poder gestionar la llegada de pacientes y de salas de espera,Si
+54,Como usuario quiero poder acceder a la agenda de enfermería para utilizar sus funcionalidades,No
+55,Como usuario quiero poder buscar transacciones para poder detectar gastos innecesarios en mi cuenta durante cierto periodo de tiempo,Si
+56,"Como desarrollador, yo quiero reemplazar el Widget de Barra para seleccionar productos, con la finalidad de dar mantenimieno al widget de barra para seleccionar productos",No
+59,"Como Usuario Administrador, quiero descargar un informe general que tenga en cuenta todos los trabajaos que se hicieron en unidad (neumáticos, mantenimiento, combustible, etc).",Si
+60,"Como usuario administrador, quiero poder mantener los informes de mantenimiento durante 6 meses.",Si
+63,"Como usuario administrador, quiero poder eliminar las ordenes de trabajo",Si

@@ -1,0 +1,10 @@
+12,"Como un operador hotelero, quiero establecer las tarifas óptimas para las habitaciones de mi hotel.",No
+15,"Como gerente de proyecto, necesito un tablero de control personalizable para visualizar el progreso y el rendimiento de mi equipo en diferentes proyectos.",No
+16,"Como usuario premium, quiero acceder a contenido exclusivo para sentir que mi membresía tiene un valor adicional.",No
+32,Como usuario quiero hacer una búsqueda del producto filtrada por nombre y disponibilidad para que me muestre los productos disponibles.,Si
+36,"El sistema debería ser capaz de generar informes detallados sobre las ventas, incluyendo información sobre productos vendidos, clientes registrados, comentarios de clientes y datos de envío para facilitar el análisis exhaustivo de la actividad comercial",No
+45,"Como Gerente de ventas, quiero consultar los pedidos de venta procesados clasificándolos por vendedor, región y líneas de producto.",Si
+47,"Como Analista de logística, quiero que el sistema me sugiera la ruta más corta en base a una serie de despachos de mercancía y un transporte.",Si
+56,"Como desarrollador, yo quiero reemplazar el Widget de Barra para seleccionar productos, con la finalidad de dar mantenimieno al widget de barra para seleccionar productos",No
+59,"Como Usuario Administrador, quiero descargar un informe general que tenga en cuenta todos los trabajaos que se hicieron en unidad (neumáticos, mantenimiento, combustible, etc).",Si
+62,"Como usuario administrador, quiero filtrar la información que se va a cargar en el informe de mantenimiento con los siguientes campos: Tipo de proyección, Valor, Internos, planes, personal acivo, internos seleccionados.",Si

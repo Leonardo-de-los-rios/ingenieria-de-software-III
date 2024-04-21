@@ -1,0 +1,20 @@
+1,"Como usuario administrador, quiero un registro de auditoria, para lograr realizar seguimiento de la actividad de los demas usuarios",Si
+2,"Como usuario cualquiera, quiero una barra de busqueda, para lograr ubicar cajas NAP en el mapa o consultar cobertura en una coordenada especifica",Si
+7,"como usuario tecnico, quiero que se mantenga fija la posicion del mapa en la ubicacion actual, para lograr que el tecnico vea solo las cajas que tiene cerca",No
+9,"Como Analista de logística, quiero que el sistema me sugiera la ruta más corta en base a una serie de despachos de mercancía y un transporte.",Si
+10,"Como Vendedor, quiero registrar los productos y cantidades que me solicita un cliente para crear un pedido de venta.",Si
+12,"Como un operador hotelero, quiero establecer las tarifas óptimas para las habitaciones de mi hotel.",No
+14,"Como cliente recurrente, espero que mi información quede guardada para crear una experiencia de pago más fluida.",No
+19,"Como usuario, quiero poder cambiar mi contraseña y gestionar la seguridad de mi cuenta fácilmente para proteger mis datos personales y financieros.",No
+20,Como usuario administrador quiero crear un nuevo rol a una persona para que pueda acceder a ciertos permisos que no forman parte de los roles ya definidos.,No
+21,Como usuario administrador quiero ver el listado de los productos que han sido creados para tener un mejor orden y control de los mismos.,Si
+26,Como usuario administrador quiero acceder a las estadísticas de la plataforma para llevar un control de la cantidad de emprendedores/actividades existentes y visualizar su estado.,Si
+35,"El usuario debería poder iniciar sesión utilizando su dirección de correo electrónico o número de teléfono, así como también a través de cuentas de redes sociales como Facebook y Twitter para acceder a la plataforma.",No
+38,"Como Cliente, quiero pagar mi suscripción mensual vía sitio web por medio de transferencia bancaria o tarjeta de crédito.",Si
+39,"Como Usuario Administrador, Cuando accedo a la aplicación con “usuario” y “contraseña”, Quiero ver el listados de usuarios registrados.",Si
+46,"Como Analista de logística, quiero seleccionar un pedido de venta y enviarlo al almacén para que procedan con su preparación.",Si
+47,"Como Analista de logística, quiero que el sistema me sugiera la ruta más corta en base a una serie de despachos de mercancía y un transporte.",Si
+49,"Como usuario frecuente de la aplicación, quiero una forma de simplificar la información relevante de la manera más rápida posible.",No
+50,"Como gerente de producto, quiero una manera en que los miembros del equipo puedan entender cómo las tareas individuales contribuyen a los objetivos comerciales más amplios para aumentar la eficiencia.",No
+52,Como usuario quiero acceder a la agenda de enfermería de forma segura para usar sus funcionalidades,No
+61,"Como usuario, quiero modificar los mensajes de aviso cuando creamos el check list llamado ""control mensual de documentación de unidades """,No
