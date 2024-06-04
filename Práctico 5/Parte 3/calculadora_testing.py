@@ -1,3 +1,4 @@
+import platform
 import unittest
 
 from selenium import webdriver
@@ -12,15 +13,18 @@ class CalculadoraTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        service = Service(executable_path="chromedriver.exe")
+        system = platform.system()
+        if system == "Windows":
+            service = Service(executable_path="chromedriver.exe")
+        elif system == "Linux":
+            service = Service(executable_path="chromedriver-linux64/chromedriver")
         cls.driver = webdriver.Chrome(service=service)
         cls.driver.get("https://profequiroga.github.io/Calculadora-IS3/")
 
     # Verifica los elementos del HTML (inputs, buttons, etc.)
     def get_elemento(self, by, value):
         try:
-            element = self.driver.find_element(by, value)
-            return element
+            return self.driver.find_element(by, value)
         except NoSuchElementException:
             return None
 
@@ -79,18 +83,14 @@ class CalculadoraTests(unittest.TestCase):
         except TimeoutException:
             return None
 
-    def uncheck_integers_only(self, integers_only):
-        if integers_only.is_selected():
-            integers_only.click()
-
     def clear(self, number_1, number_2, clear):
         number_1.clear()
         number_2.clear()
         clear.click()
 
-    def set_number(self, numero, number):
+    def set_number(self, numero, input):
         if numero:
-            number.send_keys(numero)
+            input.send_keys(numero)
 
     def get_resultado_esperado(self, resultado_esperado, operacion, i, integers_only):
         # No activar integers_only para concatenación
@@ -108,25 +108,15 @@ class CalculadoraTests(unittest.TestCase):
         if error_obtenido != "" or error_esperado:
             if error_obtenido == "Divide by zero error!":
                 self.driver.refresh()
-                self.assertEqual(error_obtenido, error_esperado)
             self.assertEqual(error_obtenido, error_esperado)
 
-    def verificar_resultados(
-        self, resultado_esperado, resultado_obtenido, operacion, i
-    ):
+    def verificar_resultados(self, resultado_esperado, resultado_obtenido):
         if resultado_esperado or resultado_obtenido:
-            if i == 1 and operacion != 4:
-                self.assertEqual(
-                    resultado_obtenido,
-                    resultado_esperado,
-                    f"La operación debería dar {resultado_esperado}",
-                )
-            else:
-                self.assertEqual(
-                    resultado_obtenido,
-                    resultado_esperado,
-                    f"La operación debería dar {resultado_esperado}",
-                )
+            self.assertEqual(
+                resultado_obtenido,
+                resultado_esperado,
+                f"La operación debería dar {resultado_esperado}",
+            )
 
     def realizar_operacion(
         self, num_build, numero1, numero2, operacion, resultado_esperado, error_esperado
@@ -149,7 +139,6 @@ class CalculadoraTests(unittest.TestCase):
             operation.select_by_value(str(operacion))
 
             self.verificar_elementos(elementos, operacion)
-            self.uncheck_integers_only(integers_only)
             self.clear(number_1, number_2, clear)
 
             self.set_number(numero1, number_1)
@@ -165,61 +154,19 @@ class CalculadoraTests(unittest.TestCase):
             error_obtenido = error_label.text
 
             self.verificar_errores(error_esperado, error_obtenido)
-            self.verificar_resultados(
-                resultado_esperado_aux, resultado_obtenido, operacion, i
-            )
+            self.verificar_resultados(resultado_esperado_aux, resultado_obtenido)
 
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
 
 
-def generar_prueba_suma(build, numero1, numero2, resultado_esperado, error_esperado):
-    def test(self):
-        self.realizar_operacion(
-            build, numero1, numero2, 0, resultado_esperado, error_esperado
-        )
-
-    return test
-
-
-def generar_prueba_resta(build, numero1, numero2, resultado_esperado, error_esperado):
-    def test(self):
-        self.realizar_operacion(
-            build, numero1, numero2, 1, resultado_esperado, error_esperado
-        )
-
-    return test
-
-
-def generar_prueba_producto(
-    build, numero1, numero2, resultado_esperado, error_esperado
+def generar_prueba(
+    build, numero1, numero2, operacion, resultado_esperado, error_esperado
 ):
     def test(self):
         self.realizar_operacion(
-            build, numero1, numero2, 2, resultado_esperado, error_esperado
-        )
-
-    return test
-
-
-def generar_prueba_division(
-    build, numero1, numero2, resultado_esperado, error_esperado
-):
-    def test(self):
-        self.realizar_operacion(
-            build, numero1, numero2, 3, resultado_esperado, error_esperado
-        )
-
-    return test
-
-
-def generar_prueba_concatenacion(
-    build, numero1, numero2, resultado_esperado, error_esperado
-):
-    def test(self):
-        self.realizar_operacion(
-            build, numero1, numero2, 4, resultado_esperado, error_esperado
+            build, numero1, numero2, operacion, resultado_esperado, error_esperado
         )
 
     return test
@@ -337,59 +284,55 @@ pruebas_concatenacion = [
 ]
 
 
-def sumas(build):
-    for i, (numero1, numero2, resultado_esperado, error) in enumerate(pruebas_suma, 1):
-        test_name = f"test_suma_build_{build}_caso_{i}"
-        test = generar_prueba_suma(build, numero1, numero2, resultado_esperado, error)
-        setattr(CalculadoraTests, test_name, test)
+tests = [
+    (0, "suma", pruebas_suma),
+    (1, "resta", pruebas_resta),
+    (2, "producto", pruebas_producto),
+    (3, "division", pruebas_division),
+    (4, "concatenacion", pruebas_concatenacion),
+]
 
 
-def restas(build):
-    for i, (numero1, numero2, resultado_esperado, error) in enumerate(pruebas_resta, 1):
-        test_name = f"test_resta_build_{build}_caso_{i}"
-        test = generar_prueba_resta(build, numero1, numero2, resultado_esperado, error)
-        setattr(CalculadoraTests, test_name, test)
-
-
-def productos(build):
-    for i, (numero1, numero2, resultado_esperado, error) in enumerate(
-        pruebas_producto, 1
-    ):
-        test_name = f"test_producto_build_{build}_caso_{i}"
-        test = generar_prueba_producto(
-            build, numero1, numero2, resultado_esperado, error
+def test(build, operacion):
+    for i, (numero1, numero2, resultado_esperado, error) in enumerate(operacion[2], 1):
+        test_name = f"test_{operacion[1]}_build_{build}_caso_{i}"
+        test = generar_prueba(
+            build, numero1, numero2, operacion[0], resultado_esperado, error
         )
         setattr(CalculadoraTests, test_name, test)
 
 
-def divisiones(build):
-    for i, (numero1, numero2, resultado_esperado, error) in enumerate(
-        pruebas_division, 1
-    ):
-        test_name = f"test_division_build_{build}_caso_{i}"
-        test = generar_prueba_division(
-            build, numero1, numero2, resultado_esperado, error
+def ingresar_datos():
+    build = int(input("Ingresa el build (0 al 9): "))
+    operacion = int(
+        input(
+            "Ingresa la operacion (0: suma, 1: resta, 2: producto, 3: division, 4: concatenacion): "
         )
-        setattr(CalculadoraTests, test_name, test)
-
-
-def concatenaciones(build):
-    for i, (numero1, numero2, resultado_esperado, error_esperado) in enumerate(
-        pruebas_concatenacion, 1
-    ):
-        test_name = f"test_concatenacion_build_{build}_caso_{i}"
-        test = generar_prueba_concatenacion(
-            build, numero1, numero2, resultado_esperado, error_esperado
-        )
-        setattr(CalculadoraTests, test_name, test)
+    )
+    return build, operacion
 
 
 if __name__ == "__main__":
-    build = 9
+    while True:
+        build, operacion = ingresar_datos()
+        # Crear suite de pruebas
+        suite = unittest.TestSuite()
+        test(build, tests[operacion])
 
-    sumas(build)
-    restas(build)
-    productos(build)
-    divisiones(build)
-    concatenaciones(build)
-    unittest.main()
+        # Agregar pruebas a la suite
+        for attr_name in dir(CalculadoraTests):
+            if attr_name.startswith("test_"):
+                suite.addTest(CalculadoraTests(attr_name))
+
+        # Ejecutar las pruebas de la suite
+        runner = unittest.TextTestRunner()
+        runner.run(suite)
+
+        # Eliminar las pruebas dinámicamente agregadas
+        for attr_name in dir(CalculadoraTests):
+            if attr_name.startswith("test_"):
+                delattr(CalculadoraTests, attr_name)
+
+        repeat = input("¿Quieres realizar otro test? (s/n): ").strip().lower()
+        if repeat != "s":
+            break
